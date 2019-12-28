@@ -39,8 +39,8 @@ Run the following commands to configure *urxvt terminal*:
 ### Keybindings for tabs<a id="sec-1-1-1" name="sec-1-1-1"></a>
 
 The default configuration of *urxvt* terminal for create and switch between tabs 
-is using the *Shift* key, this can be changed by the key *Control* modifing the 
-file *usr/local/x86_64-linux-gnu/urxvt/perl/tabbed*. In line 353 reads:
+is using the *Shift* key, this can be changed by the key *Control* modifying the 
+file */usr/local/x86_64-linux-gnu/urxvt/perl/tabbed*. In line 353 reads:
 
     if ($event->{state} & urxvt::ControlMask) {
 
