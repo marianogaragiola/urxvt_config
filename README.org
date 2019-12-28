@@ -1,0 +1,24 @@
+* urxvt Terminal Configuration
+
+** Installation
+
+First you need to install the packages /rxvt-unicode/ and /xsel/. If you use 
+/Ubuntu/ you can install those packages with
+
+#+BEGIN_SRC sh
+$ sudo apt install -y rxvt-unicode xsel
+#+END_SRC
+
+rxvt-unicode is the package name of URxvt. And xsel is a clipboard manager.
+You also need the /Perl/ extension to send the marked text to /xsel/. 
+
+Run the following commands to configure /urxvt terminal/:
+
+#+BEGIN_SRC sh
+$ git clone https://github.com/marianogaragiola/urxvt_config.git
+$ cd urxvt_config
+$ mkdir -p $HOME/.urxvt/ext
+$ cp resources/* $HOME/.urxvt/ext/
+$ cp Xresources $HOME/.Xresources
+$ xrdb .Xresources
+#+END_SRC
