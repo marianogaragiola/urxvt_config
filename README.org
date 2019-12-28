@@ -22,3 +22,19 @@ $ cp resources/* $HOME/.urxvt/ext/
 $ cp Xresources $HOME/.Xresources
 $ xrdb .Xresources
 #+END_SRC
+
+*** Keybindings for tabs
+The default configuration of /urxvt/ terminal for create and switch between tabs 
+is using the /Shift/ key, this can be changed by the key /Control/ modifing the 
+file //usr/local/x86_64-linux-gnu/urxvt/perl/tabbed//. In line 353 reads
+
+#+BEGIN_SRC
+if ($event->{state} & urxvt::ControlMask) {
+#+END_SRC
+
+All you have to do, is replace "Shift", with "Control". The line must look like this:
+
+#+BEGIN_SRC
+if ($event->{state} & urxvt::ControlMask) {
+#+END_SRC
+
